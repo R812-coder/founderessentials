@@ -28,13 +28,13 @@ const mono = JetBrains_Mono({
   display: 'swap',
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://flbizstart.com';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://founderessentials.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'flbizstart — Plain-language guides for new Florida LLC owners',
-    template: '%s · flbizstart',
+    default: 'founder essentials — Plain-language guides for new Florida LLC owners',
+    template: '%s · founder essentials',
   },
   description:
     'A 30-day operational guide for new Florida businesses. Banking, registered agents, EINs, annual reports, and the tools that actually fit your industry.',
@@ -51,14 +51,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: SITE_URL,
-    siteName: 'flbizstart',
-    title: 'flbizstart — Plain-language guides for new Florida LLC owners',
+    siteName: 'founder essentials',
+    title: 'founder essentials — Plain-language guides for new Florida LLC owners',
     description:
       'A 30-day operational guide for new Florida businesses, written by someone who watches the Sunbiz formation feed daily.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'flbizstart — Plain-language guides for new Florida LLC owners',
+    title: 'founder essentials — Plain-language guides for new Florida LLC owners',
     description:
       'A 30-day operational guide for new Florida businesses.',
   },
