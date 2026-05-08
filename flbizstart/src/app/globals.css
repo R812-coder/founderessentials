@@ -1,0 +1,273 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --grain-opacity: 0.04;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: #faf6ee;
+    color: #1a1612;
+    font-family: var(--font-body), Georgia, 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 1.65;
+    font-feature-settings: 'kern', 'liga', 'onum';
+    position: relative;
+  }
+
+  /* Paper-grain texture overlay — subtle warmth without screaming "stock photo" */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.6 0 0 0 0 0.5 0 0 0 0 0.4 0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    opacity: var(--grain-opacity);
+    pointer-events: none;
+    z-index: 1;
+    mix-blend-mode: multiply;
+  }
+
+  /* Make all real content sit above the noise */
+  body > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  ::selection {
+    background-color: #b54520;
+    color: #faf6ee;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display), Georgia, serif;
+    color: #1a1612;
+    letter-spacing: -0.015em;
+  }
+
+  a {
+    color: #1f3a36;
+    text-decoration: underline;
+    text-decoration-color: #d4cfc4;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.15s ease;
+  }
+
+  a:hover {
+    text-decoration-color: #b54520;
+  }
+}
+
+@layer components {
+  /* Hairline horizontal rule, document-like */
+  .hairline {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #d4cfc4 20%, #d4cfc4 80%, transparent);
+  }
+
+  /* Editorial article styling — applied to .prose-editorial container */
+  .prose-editorial {
+    max-width: 680px;
+  }
+
+  .prose-editorial > h1 {
+    font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+    line-height: 1.05;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.025em;
+  }
+
+  .prose-editorial > h2 {
+    font-size: clamp(1.5rem, 2.5vw, 1.875rem);
+    line-height: 1.2;
+    font-weight: 400;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.015em;
+  }
+
+  .prose-editorial > h3 {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    font-weight: 500;
+    margin-top: 2.25rem;
+    margin-bottom: 0.75rem;
+    color: #3a3530;
+  }
+
+  .prose-editorial > h4 {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    margin-top: 1.75rem;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-body), serif;
+    color: #3a3530;
+  }
+
+  .prose-editorial > p {
+    margin-bottom: 1.25rem;
+    color: #1a1612;
+  }
+
+  .prose-editorial > ul,
+  .prose-editorial > ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .prose-editorial > ul > li {
+    list-style: none;
+    position: relative;
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .prose-editorial > ul > li::before {
+    content: '—';
+    position: absolute;
+    left: -1.5rem;
+    color: #b54520;
+    font-weight: 600;
+  }
+
+  .prose-editorial > ol {
+    list-style: decimal;
+  }
+
+  .prose-editorial > ol > li {
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .prose-editorial > ol > li::marker {
+    color: #b54520;
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+  }
+
+  .prose-editorial blockquote {
+    border-left: 3px solid #b54520;
+    padding-left: 1.25rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: #3a3530;
+  }
+
+  .prose-editorial code {
+    background-color: #f5efe2;
+    padding: 0.1em 0.4em;
+    border-radius: 2px;
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    color: #7a2e15;
+  }
+
+  .prose-editorial table {
+    width: 100%;
+    margin: 2rem 0;
+    border-collapse: collapse;
+    font-size: 0.95em;
+  }
+
+  .prose-editorial th {
+    text-align: left;
+    padding: 0.75rem 0.75rem 0.75rem 0;
+    border-bottom: 2px solid #1a1612;
+    font-family: var(--font-display), serif;
+    font-weight: 500;
+    font-size: 1em;
+  }
+
+  .prose-editorial td {
+    padding: 0.75rem 0.75rem 0.75rem 0;
+    border-bottom: 1px solid #e8e2d4;
+    vertical-align: top;
+  }
+
+  .prose-editorial tr:last-child td {
+    border-bottom: none;
+  }
+
+  /* Strong is used for emphasis; make it warm-ink not jet-black */
+  .prose-editorial strong {
+    color: #1a1612;
+    font-weight: 600;
+  }
+
+  /* Affiliate button — distinctive, claims attention without screaming */
+  .aff-btn {
+    display: inline-block;
+    background-color: #1f3a36;
+    color: #faf6ee !important;
+    padding: 0.875rem 1.5rem;
+    margin: 1rem 0;
+    text-decoration: none !important;
+    font-family: var(--font-body), serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.01em;
+    border-radius: 2px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    border: 1px solid #1f3a36;
+  }
+
+  .aff-btn:hover {
+    background-color: #b54520;
+    border-color: #b54520;
+    transform: translateY(-1px);
+  }
+
+  /* Editorial drop cap on the first paragraph of articles */
+  .article-body > p:first-of-type::first-letter {
+    font-family: var(--font-display), serif;
+    font-size: 4.5rem;
+    line-height: 0.9;
+    font-weight: 400;
+    float: left;
+    margin: 0.1em 0.1em 0 -0.05em;
+    color: #b54520;
+  }
+
+  /* Small caps category labels */
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #b54520;
+  }
+
+  /* Decorative ornament between sections */
+  .ornament {
+    text-align: center;
+    margin: 2.5rem 0;
+    color: #d4cfc4;
+    font-size: 1.25rem;
+    letter-spacing: 1em;
+  }
+
+  .ornament::before {
+    content: '✦ ✦ ✦';
+  }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
