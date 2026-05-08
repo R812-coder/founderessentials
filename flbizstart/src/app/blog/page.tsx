@@ -5,7 +5,7 @@ import ArticleCard from '@/components/ArticleCard';
 export const metadata: Metadata = {
   title: 'All Guides',
   description:
-    'Every guide on flbizstart, organized by topic. Banking, formation, registered agents, EINs, annual reports, and more for Florida LLCs.',
+    'Every guide on founderessentials, organized by topic. Banking, formation, registered agents, EINs, annual reports, and more for Florida LLCs.',
 };
 
 export default function BlogIndexPage() {
@@ -16,7 +16,7 @@ export default function BlogIndexPage() {
       <div className="max-w-3xl mb-16">
         <div className="eyebrow mb-4">All guides</div>
         <h1 className="font-display text-5xl md:text-6xl text-ink leading-tight mb-6">
-          The complete <span className="italic text-terracotta">flbizstart</span> archive.
+          The complete <span className="italic text-terracotta">founderessentials</span> archive.
         </h1>
         <p className="text-xl text-ink-soft leading-relaxed">
           Every guide we've published, sorted newest first. New articles weekly.
