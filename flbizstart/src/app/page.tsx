@@ -134,7 +134,7 @@ export default function HomePage() {
           </div>
           <div className="col-span-12 md:col-span-8 text-ink-soft space-y-4 text-base leading-relaxed">
             <p>
-              flbizstart is published by Sunwrit, a Florida-focused new-business data service. Every guide on this site is written from the perspective of someone who pulls Florida LLC formation data daily — and watches the patterns.
+              Founder Essentials is published by Sunwrit, a Florida-focused new-business data service. Every guide on this site is written from the perspective of someone who pulls Florida LLC formation data daily — and watches the patterns.
             </p>
             <p>
               We affiliate with services we'd recommend without the affiliate relationship. When the right answer is a non-affiliate option (the IRS for free EINs, Chase Business for cash-heavy operators, Florida regional banks for relationship banking), we say so.
