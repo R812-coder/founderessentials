@@ -16,7 +16,7 @@ export default function ContactForm() {
       if (accessKey && accessKey !== 'your-web3forms-access-key-here') {
         // Use Web3Forms if access key is configured
         formData.append('access_key', accessKey);
-        formData.append('subject', `[flbizstart] ${formData.get('subject') || 'New message'}`);
+        formData.append('subject', `[founder essentials] ${formData.get('subject') || 'New message'}`);
 
         const response = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
