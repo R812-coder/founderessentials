@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Terms of Service',
   description:
-    'Terms of service for flbizstart.com.',
+    'Terms of service for founderessentials.com.',
 };
 
 export default function TermsPage() {
@@ -22,7 +22,7 @@ export default function TermsPage() {
           </p>
 
           <p>
-            By accessing or using flbizstart.com (the "Site"), you agree to be bound by these Terms of Service ("Terms"). If you don't agree, please don't use the Site.
+            By accessing or using founderessentials.com (the "Site"), you agree to be bound by these Terms of Service ("Terms"). If you don't agree, please don't use the Site.
           </p>
 
           <h2>1. Educational content only — not advice</h2>
@@ -44,7 +44,7 @@ export default function TermsPage() {
           <h2>3. Content ownership</h2>
 
           <p>
-            All content on this Site — articles, graphics, layouts, and code — is the property of flbizstart, a publication of Sunwrit, and is protected by US copyright law. You may share short excerpts (under 100 words) with attribution and a link back to the original article. You may not republish, reproduce, or distribute substantial portions without written permission.
+            All content on this Site — articles, graphics, layouts, and code — is the property of Founder Essentials, a publication of Sunwrit, and is protected by US copyright law. You may share short excerpts (under 100 words) with attribution and a link back to the original article. You may not republish, reproduce, or distribute substantial portions without written permission.
           </p>
 
           <h2>4. User submissions</h2>
@@ -62,7 +62,7 @@ export default function TermsPage() {
           <h2>6. Limitation of liability</h2>
 
           <p>
-            To the fullest extent permitted by law, flbizstart, Sunwrit, and their respective owners, employees, and contractors are not liable for any direct, indirect, incidental, consequential, or punitive damages arising from your use of the Site, the content, or any third-party services or products linked from the Site.
+            To the fullest extent permitted by law, Founder Essentials, Sunwrit, and their respective owners, employees, and contractors are not liable for any direct, indirect, incidental, consequential, or punitive damages arising from your use of the Site, the content, or any third-party services or products linked from the Site.
           </p>
 
           <h2>7. Third-party services</h2>
