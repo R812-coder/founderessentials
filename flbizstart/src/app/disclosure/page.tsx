@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Affiliate Disclosure',
   description:
-    'flbizstart participates in affiliate marketing programs. Full disclosure of how we earn commissions and how that affects our recommendations.',
+    'founderessentials participates in affiliate marketing programs. Full disclosure of how we earn commissions and how that affects our recommendations.',
 };
 
 export default function DisclosurePage() {
@@ -18,7 +18,7 @@ export default function DisclosurePage() {
 
         <div className="prose-editorial">
           <p>
-            flbizstart.com participates in affiliate marketing programs. When you click on a link to a third-party product or service and complete a qualifying action — usually signing up for an account or making a purchase — we may earn a commission, at no additional cost to you.
+            founderessentials.com participates in affiliate marketing programs. When you click on a link to a third-party product or service and complete a qualifying action — usually signing up for an account or making a purchase — we may earn a commission, at no additional cost to you.
           </p>
 
           <h2>Programs we currently affiliate with</h2>
