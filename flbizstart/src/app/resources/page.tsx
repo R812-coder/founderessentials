@@ -156,7 +156,7 @@ export default function ResourcesPage() {
       <div className="max-w-prose mx-auto mb-20">
         <div className="eyebrow mb-4">Resources</div>
         <h1 className="font-display text-5xl md:text-6xl text-ink leading-[1.05] mb-8 tracking-tight">
-          The flbizstart <span className="italic text-terracotta">stack</span>.
+          The founder essentials <span className="italic text-terracotta">stack</span>.
         </h1>
         <p className="text-xl text-ink-soft leading-relaxed mb-6">
           Every tool we recommend for new Florida LLC owners, organized by category. We affiliate with most — but not all — of these. Where we don't have an affiliate relationship, we still recommend the tool when it's the right pick.
