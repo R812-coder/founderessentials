@@ -8,7 +8,7 @@ export default function Header() {
           <Link href="/" className="group no-underline">
             <div className="flex items-baseline gap-2">
               <span className="font-display text-3xl tracking-tight text-ink">
-                flbizstart
+                founder essentials
               </span>
               <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-warmgray hidden sm:inline">
                 a Sunwrit publication
