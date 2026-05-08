@@ -4,7 +4,7 @@ import ContactForm from '@/components/ContactForm';
 export const metadata: Metadata = {
   title: 'Contact',
   description:
-    'Get in touch with flbizstart. Questions, corrections, partnerships, or anything related to starting a Florida LLC.',
+    'Get in touch with founderessentials. Questions, corrections, partnerships, or anything related to starting a Florida LLC.',
 };
 
 export default function ContactPage() {
