@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description:
-    'How flbizstart collects, uses, and protects your information.',
+    'How founderessentials collects, uses, and protects your information.',
 };
 
 export default function PrivacyPage() {
@@ -22,7 +22,7 @@ export default function PrivacyPage() {
           </p>
 
           <p>
-            flbizstart.com ("we", "us", "our") respects your privacy. This Privacy Policy explains what information we collect, how we use it, and the choices you have. By using this site, you agree to the practices described here.
+            founderessentials.com ("we", "us", "our") respects your privacy. This Privacy Policy explains what information we collect, how we use it, and the choices you have. By using this site, you agree to the practices described here.
           </p>
 
           <h2>1. Information we collect</h2>
