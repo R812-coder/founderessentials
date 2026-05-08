@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'Founderessentials ' is published by Sunwrit, a Florida-focused new-business data service. Plain-language guides for new Florida LLC owners, written by an operator.',
+    'Founderessentials  is published by Sunwrit, a Florida-focused new-business data service. Plain-language guides for new Florida LLC owners, written by an operator.',
 };
 
 export default function AboutPage() {
