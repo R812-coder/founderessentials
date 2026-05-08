@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-wide mx-auto px-6 lg:px-12 py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
           <div className="col-span-2 md:col-span-1">
-            <div className="font-display text-2xl text-ink mb-2">founder essentials</div>
+            <div className="font-display text-2xl text-ink mb-2">founderessentials</div>
             <p className="text-sm text-warmgray leading-relaxed">
               Plain-language guides for new Florida LLC owners.
             </p>
@@ -95,7 +95,7 @@ export default function Footer() {
             © {year} Founder Essentials, a Sunwrit publication. All rights reserved.
           </div>
           <div className="max-w-md md:text-right leading-relaxed">
-            Founder's Essentials contains affiliate links. We earn a commission when you sign up for some recommended services, at no cost to you. See our <Link href="/disclosure" className="text-warmgray underline decoration-warmgray-soft hover:decoration-terracotta">full disclosure</Link>. Nothing on this site is legal, tax, or financial advice.
+            Founder Essentials contains affiliate links. We earn a commission when you sign up for some recommended services, at no cost to you. See our <Link href="/disclosure" className="text-warmgray underline decoration-warmgray-soft hover:decoration-terracotta">full disclosure</Link>. Nothing on this site is legal, tax, or financial advice.
           </div>
         </div>
       </div>
