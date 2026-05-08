@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'flbizstart is published by Sunwrit, a Florida-focused new-business data service. Plain-language guides for new Florida LLC owners, written by an operator.',
+    'Founderessentials ' is published by Sunwrit, a Florida-focused new-business data service. Plain-language guides for new Florida LLC owners, written by an operator.',
 };
 
 export default function AboutPage() {
@@ -18,7 +18,7 @@ export default function AboutPage() {
 
         <div className="prose-editorial">
           <p className="text-xl md:text-2xl text-ink-soft italic font-body leading-relaxed mb-10">
-            I'm Ray, founder of Sunwrit and the person behind flbizstart.com.
+            I'm Ray, founder of Sunwrit and the person behind founderessentials.com.
           </p>
 
           <p>
@@ -34,7 +34,7 @@ export default function AboutPage() {
           </p>
 
           <p>
-            flbizstart is the alternative. Plain-language guides on every step of starting and operating a Florida LLC, written by someone who watches the formation feed every weekday.
+            founderessentials is the alternative. Plain-language guides on every step of starting and operating a Florida LLC, written by someone who watches the formation feed every weekday.
           </p>
 
           <h2>What I cover</h2>
@@ -73,7 +73,7 @@ export default function AboutPage() {
           </p>
 
           <p className="text-ink-soft text-base">
-            <strong>Site:</strong> flbizstart.com
+            <strong>Site:</strong> founderessentials.com
             <br />
             <strong>Sunwrit (B2B data product):</strong> the parent publication
             <br />
