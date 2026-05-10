@@ -10,6 +10,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
+      <meta name="google-site-verification" content="Ym-9k7On1bKVXawp_ZTK00NnR8gSXlr6qJJuWi3k9rM" />
       <section className="max-w-wide mx-auto px-6 lg:px-12 pt-12 pb-20 lg:pt-20 lg:pb-32">
         <div className="grid grid-cols-12 gap-6 lg:gap-12">
           <div className="col-span-12 lg:col-span-8">
